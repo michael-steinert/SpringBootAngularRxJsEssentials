@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
-
 import com.example.server.enumeration.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -27,6 +26,6 @@ public class Server {
     private String name;
     private String memory;
     private String type;
-    private String imagePath;
+    private String imageUri;
     private Status status;
 }

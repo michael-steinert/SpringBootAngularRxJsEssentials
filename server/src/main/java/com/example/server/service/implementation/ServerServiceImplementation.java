@@ -27,7 +27,7 @@ public class ServerServiceImplementation implements ServerService {
     @Override
     public Server create(Server server) {
         log.info("Saving new Server: {}", server.getName());
-        server.setImagePath(setServerImageUri());
+        server.setImageUri(setServerImageUri());
         return serverRepository.save(server);
     }
 
